@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Windows Update - Restart Required</title>
+  <style>
+    body {
+      background-color: #0e1217;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #1e2329;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #00000055;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .update-header {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .update-header .icon {
+      font-size: 24px;
+      margin-right: 12px;
+      color: #58a6ff;
+    }
+
+    .restart-info {
+      color: #c9d1d9;
+      margin-bottom: 25px;
+    }
+
+    .update-box {
+      background-color: #2d333b;
+      padding: 15px;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    .update-box span {
+      display: block;
+    }
+
+    .pending {
+      color: #8b949e;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .success-box {
+      background-color: #3b441f;
+      color: #a6d189;
+      padding: 15px;
+      border-radius: 6px;
+      margin-top: 10px;
+      font-size: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn {
+      background-color: #58a6ff;
+      color: white;
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #1f6feb;
+    }
+
+    .restart-button-container {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: -55px;
+      margin-bottom: 20px;
+    }
+
+    .dropdown-arrow {
+      width: 12px;
+      height: 12px;
+      border-left: 2px solid white;
+      border-bottom: 2px solid white;
+      transform: rotate(45deg);
+      margin-left: 6px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Windows Update</h1>
+
+    <div class="update-header">
+      <div class="icon">🔁</div>
+      <div>
+        <strong>Restart required</strong> (estimate: 2 min)<br />
+        <span class="restart-info">Your organization requires your device to restart by 23/05/2025.</span>
+      </div>
+    </div>
+
+    <div class="restart-button-container">
+      <button class="btn" onclick="window.location.href='https://www.youtube.com/watch?v=y6120QOlsfU&autoplay=1'">
+        Restart now
+      </button>
+      <div class="dropdown-arrow"></div>
+    </div>
+
+    <div class="update-box">
+      <span>2025-05 Security Update for Windows 11 Version 24H2 for x64-based Systems (KB5061096)</span>
+      <span class="pending">Pending restart</span>
+    </div>
+
+    <div class="success-box">
+      <span>✅ Great news! The latest security update was installed without a restart.</span>
+      <a href="#" style="color: #a6d189; text-decoration: underline;">Learn more</a>
+    </div>
+  </div>
+</body>
+</html>
